@@ -1,0 +1,59 @@
+*{ 
+    margin: 0px auto;
+    padding: 0px;
+}
+body{
+    background-color: antiquewhite;
+}
+hl{
+    font: bold 1.5em arial;
+    text-align: center;
+    padding: 0.5em;
+}
+#container{
+    margin: 100px;
+}
+#visor{
+    
+    position: absolute;
+  width: 450px;
+  height: 100vh;
+  border-radius: 10%;
+  overflow: hidden;
+}
+#fondouno{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  animation: moverFondo 5s linear infinite; 
+}
+#fondodos{
+    position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  animation: moverFondo 5s linear infinite;
+}
+#micoche{ 
+    position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 160px;
+  background-size: cover;
+}
+
+@keyframes moverFondo {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

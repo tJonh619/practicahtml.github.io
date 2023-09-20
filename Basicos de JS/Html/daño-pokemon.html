@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daño pokemon</title>
+</head>
+<body>
+    <h1>Calculadora de daño pokemon</h1>
+    <select id="tipo1"> 
+        <option value="electrico">electrico</option>
+        <option value="agua">agua</option>
+        <option value="fuego">fuego</option>
+        <option value="hierba">hierba</option>
+    </select>
+    <select id="tipo2"> 
+        <option value="electrico">electrico</option>
+        <option value="agua">agua</option>
+        <option value="fuego">fuego</option>
+        <option value="hierba">hierba</option>
+    </select>
+    <p>Ingrese el valor de ataque <input type="number" id="txtataque"></p>
+    <p>Ingrese el valor de defensa <input type="number" id="txtdefensa"></p>
+    <button onclick="calculardaño()">Imprimir</button>
+
+    <div class="resultado" id="resultado" ></div>
+    <script src="/JS/daño-pokemon.js"></script>
+</body>
+</html>
